@@ -77,7 +77,7 @@ public class CSK {
 
 	public void bestBatsmen() {
 		for (Players p1 : cskPlayers) {
-			if ((p1.getSpecialization() == "Batter" || p1.getSpecialization() == "All-rounder")
+			if (p1.getSpecialization() == "Batter" 
 					&& p1.getTotal_runs() > 1000) {
 				System.out.println(p1.getName());
 			}

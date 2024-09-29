@@ -75,7 +75,7 @@ public class RCB {
 
 	public void bestBatsmen() {
 		for (Players p1 : rcbPlayers) {
-			if ((p1.getSpecialization() == "Batter" || p1.getSpecialization() == "All-rounder")
+			if (p1.getSpecialization() == "Batter" 
 					&& p1.getTotal_runs() > 1000) {
 				System.out.println(p1.getName());
 			}
